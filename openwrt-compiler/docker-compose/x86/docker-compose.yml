@@ -1,0 +1,19 @@
+version: '2'
+services:
+    x86:
+        container_name: x86
+        image: tenbay
+        privileged: true
+        ports:
+            - "5501:22"
+        command:
+            - "/usr/local/sbin/initdocker"
+        volumes:
+            - /data/x86/work:/share:rw
+            - /etc/localtime:/etc/localtime:ro
+            - /data/x86/script/initdocker:/usr/local/sbin/initdocker:ro
+            - /data/share/dl_lede:/share/dl:ro
+        working_dir: /share
+        environment:
+            LANG: C.UTF-8
+            TERM: xterm

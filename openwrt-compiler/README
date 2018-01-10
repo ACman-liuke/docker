@@ -1,0 +1,3 @@
+1、用Dockfile和Makefile可以制作出tenbay镜像；
+2、admin-docker：是docker管理目录，是用于docker-compose命令管理tenbay镜像的；
+

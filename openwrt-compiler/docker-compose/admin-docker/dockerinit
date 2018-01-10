@@ -1,0 +1,2 @@
+#!/bin/sh
+docker-compose -f /data/x86/docker-compose.yml start
